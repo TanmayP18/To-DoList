@@ -19,6 +19,8 @@
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         color: #ffffff;
         padding-top: 40px;
+        display: flex;
+        flex-direction : column;
         
     }
 
@@ -197,6 +199,34 @@
         transform: scale(1.03);
         box-shadow: 0 4px 12px rgba(255, 8, 68, 0.4);
     }
+            /* Footer Container */
+.main-footer {
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    margin-top: auto; /* Pushes the footer down if using flex body */
+    position: relative;
+    bottom: 0;
+}
+
+/* Footer Text */
+.main-footer p {
+    margin: 0;
+    color: #a0a0b5;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+}
+
+/* Accent highlight for your name */
+.main-footer p span {
+    color: #00f2fe;
+    font-weight: 600;
+    text-shadow: 0 0 10px rgba(0, 242, 254, 0.2);
+}
 
         </style>
 </head>
@@ -217,6 +247,14 @@
             
         </div>
     </div>
+    <!-- ... Rest of your body elements ... -->
+    
+    <footer class="main-footer">
+        <p>&copy; 2026 <span>Tanmay Pawar</span>. All Rights Reserved.</p>
+    </footer>
+
+    <script src="js-test-project.js"></script>
+</body>
     <script src="js-test-project.js"></script>
 </body>
 </html>
